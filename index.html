@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Empresa de Pesca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Bienvenido a Nuestra Empresa de Pesca</h1>
+            <p>Ofrecemos los mejores servicios en el sector pesquero.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa comprometida con la pesca sostenible y de calidad.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos pesca comercial y recreativa en aguas nacionales e internacionales.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-container">
+            <!-- Aquí irán las imágenes -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos a través de nuestro correo o teléfono.</p>
+    </section>
+
+    <!-- Modal para la galería -->
+    <!-- Modal para ver las imágenes en grande -->
+    
+    <div id="gallery-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Empresa de Pesca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

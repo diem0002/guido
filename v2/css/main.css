@@ -2148,10 +2148,7 @@ input[type="reset"] {
 .post-slider__image {
   margin-bottom: 16px; }
   .post-slider__image img {
-    display: flex;
-    max-height: 200px;
-    max-width: 200px;
-  }
+    display: block; }
 
 .post-slider__info .title {
   margin-bottom: 8px; }

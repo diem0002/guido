@@ -6,9 +6,9 @@
     <title>Silver King Brazil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/libs.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link href="images/faviconSKB.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/main.css')}}"/>
+    <link href="{{asset('images/faviconSKB.png')}}" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- partial -->
 </head>
@@ -63,7 +63,7 @@
                             <div class="photo-item main-photo-item main-photo-item-1">
                                 <div class="photo-img">
                                     <div class="photo-img__block">
-                                        <img src="images/img/img1.png" alt="main-page-1">
+                                        <img src="{{ asset('images/img/img1.png') }}" alt="main-page-1">
                                     </div>
                                 </div>
                                 <div class="photo-info wysiwyg"></div>
@@ -71,14 +71,11 @@
                             <div class="photo-item main-photo-item main-photo-item-2">
                                 <div class="photo-img">
                                     <div class="photo-img__block">
-                                        <img src="images/img/img3.png" alt="main-page-2">
+                                        <img src="{{ asset('images/img/img3.png') }}" alt="main-page-2">
                                     </div>
                                 </div>
-
                                 <div class="photo-info wysiwyg"><p><!-- pie de foto polaroid home --></p></div>
-
                             </div>
-
                         </div>
                     </div>
                     <div class="col col_5 col_desktop-12 order-desktop-1">
@@ -97,9 +94,9 @@
                     <div class="dignity-item col col_4 col_mob-12">
                         <div class="dignity-block">
                             <div class="dignity-title">
-                                <h3 class="h3 title">Experiencias Personalizadas </h3>
+                                <h3 class="h3 title">Experiencias Personalizadas</h3>
                                 <div class="dignity-image">
-                                    <img src="images/iconosTarjetas/expPerson.svg" alt="present-1">
+                                    <img src="{{ asset('images/iconosTarjetas/expPerson.svg') }}" alt="present-1">
                                 </div>
                             </div>
                             <div class="dignity-description wysiwyg">
@@ -113,7 +110,7 @@
                             <div class="dignity-title">
                                 <h3 class="h3 title">Destinos Exóticos</h3>
                                 <div class="dignity-image">
-                                    <img src="images/iconosTarjetas/destiExoti.svg" alt="present-2">
+                                    <img src="{{ asset('images/iconosTarjetas/destiExoti.svg') }}" alt="present-2">
                                 </div>
                             </div>
                             <div class="dignity-description wysiwyg">
@@ -127,7 +124,7 @@
                             <div class="dignity-title">
                                 <h3 class="h3 title">Comodidad y Seguridad</h3>
                                 <div class="dignity-image">
-                                    <img src="images/iconosTarjetas/comodSegurd.svg" alt="present-3">
+                                    <img src="{{ asset('images/iconosTarjetas/comodSegurd.svg') }}" alt="present-3">
                                 </div>
                             </div>
                             <div class="dignity-description wysiwyg">
@@ -136,7 +133,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div><!-- //content -->
         </section>
@@ -148,7 +144,7 @@
                             <div class="photo-item emotional-photo__item emotional-photo__item-1">
                                 <div class="photo-img">
                                     <div class="photo-img__block">
-                                        <img src="images/imgBG/bg inicio.jpg" alt="main-page-3">
+                                        <img src="{{ asset('images/imgBG/bg inicio.jpg') }}" alt="main-page-3">
                                     </div>
                                 </div>
                                 <div class="photo-info wysiwyg"></div>
@@ -156,7 +152,7 @@
                             <div class="photo-item emotional-photo__item emotional-photo__item-2">
                                 <div class="photo-img">
                                     <div class="photo-img__block">
-                                        <img src="images/imgBG/bg inicio2.jpg" alt="main-page-4">
+                                        <img src="{{ asset('images/imgBG/bg inicio2.jpg') }}" alt="main-page-4">
                                     </div>
                                 </div>
                                 <div class="photo-info wysiwyg"></div>
@@ -164,12 +160,11 @@
                             <div class="photo-item emotional-photo__item emotional-photo__item-3">
                                 <div class="photo-img">
                                     <div class="photo-img__block">
-                                        <img src="images/img/img4.png" alt="main-page-5">
+                                        <img src="{{ asset('images/img/img4.png') }}" alt="main-page-5">
                                     </div>
                                 </div>
                                 <div class="photo-info wysiwyg"></div>
                             </div>
-
                         </div>
                     </div>
                     <div class="col col_6 col_desktop-12">
@@ -178,12 +173,12 @@
                             <div class="emotional-item">
                                 <div class="emotional-block">
                                     <div class="emotional-icon">
-                                        <img src="images/content/icon/present-4.svg" alt="present-4">
+                                        <img src="{{ asset('images/content/icon/present-4.svg') }}" alt="present-4">
                                     </div>
                                     <div class="emotional-info">
                                         <h3 class="h3 emotional-subtitle">Fit aliquet facilisi</h3>
                                         <div class="emotional-description wysiwyg">
-                                            <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. Feugiat nullam bibendum </p>
+                                            <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. Feugiat nullam bibendum</p>
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +186,7 @@
                             <div class="emotional-item">
                                 <div class="emotional-block">
                                     <div class="emotional-icon">
-                                        <img src="images/content/icon/present-5.svg" alt="present-5">
+                                        <img src="{{ asset('images/content/icon/present-5.svg') }}" alt="present-5">
                                     </div>
                                     <div class="emotional-info">
                                         <h3 class="h3 emotional-subtitle">Convallis dignissim lacus</h3>
@@ -204,12 +199,12 @@
                             <div class="emotional-item">
                                 <div class="emotional-block">
                                     <div class="emotional-icon">
-                                        <img src="images/content/icon/present-6.svg" alt="present-6">
+                                        <img src="{{ asset('images/content/icon/present-6.svg') }}" alt="present-6">
                                     </div>
                                     <div class="emotional-info">
                                         <h3 class="h3 emotional-subtitle">Nullam bibendum</h3>
                                         <div class="emotional-description wysiwyg">
-                                            <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
+                                            <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -253,133 +248,133 @@
                 </div>
             </div>
 </section>
-<section id="galeria" class="section section-main__post">
-    <div class="container">
-        <div class="row">
-            <div class="col col_3 col_desktop-12"></div>
-            <div class="col col_6 col_desktop-12">
-                <div class="post-description text-center text-mob-left">
-                    <h2 class="h2 title">nuestras <span class="round-border round-border-2">fotos</span></h2>
-                    <div class="wysiwyg">
-                        <p>Descubre momentos inolvidables en cada captura. Nuestros viajes de pesca te conectan con la naturaleza, brindándote experiencias únicas que querrás revivir una y otra vez</p>
+        <section id="galeria" class="section section-main__post">
+            <div class="container">
+                <div class="row">
+                    <div class="col col_3 col_desktop-12"></div>
+                    <div class="col col_6 col_desktop-12">
+                        <div class="post-description text-center text-mob-left">
+                            <h2 class="h2 title">nuestras <span class="round-border round-border-2">fotos</span></h2>
+                            <div class="wysiwyg">
+                                <p>Descubre momentos inolvidables en cada captura. Nuestros viajes de pesca te conectan con la naturaleza, brindándote experiencias únicas que querrás revivir una y otra vez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col_3 col_desktop-12"></div>
+                </div>
+
+                <div class="post-slider slider" style="margin-bottom: 50px">
+                    <div class="swiper-container post-slider__container">
+                        <div class="swiper-wrapper post-slider__wrapper">
+                            <div class="swiper-slide slider-item post-slider__item">
+                                <div class="post-slider__image">
+                                    <img src="images/galery/9.png" alt="main-page-7">
+                                </div>
+                                <div class="post-slider__info">
+                                    <h3 class="h3 title">Capibaribe River</h3>
+                                    <div class="wysiwyg">
+                                        <p>After years of scouting and
+                                            fishing different areas off
+                                            the coast of Northern Brazil in search of Tarpon and other
+                                            sport species, we are glad to introduce you to the first fly only operation for Tarpon in South America! </p>
+                                    </div>
+                                    <div class="display-flex justify-between align-center flex-wrap">
+                                        <button type="button" class="btn btn_secondary">Leer más</button>
+                                    </div>
+                                </div>
+                                <div class="slider-next post-slider__next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
+                                </div>
+                                <div class="slider-prev post-slider__prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slider-item post-slider__item">
+                                <div class="post-slider__image">
+                                    <img src="images/content/main-page-8.jpg" alt="main-page-8">
+                                </div>
+                                <div class="post-slider__info">
+                                    <h3 class="h3 title">Lemon macaroon</h3>
+                                    <div class="wysiwyg">
+                                        <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
+                                    </div>
+                                    <div class="display-flex justify-between align-center flex-wrap">
+                                        <div class="prise">
+                                            $24
+                                            <span class="pieces">
+                                                    for 16 pieces
+                                                </span>
+                                        </div>
+                                        <button type="button" class="btn btn_secondary">order now</button>
+                                    </div>
+                                </div>
+                                <div class="slider-next post-slider__next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
+                                </div>
+                                <div class="slider-prev post-slider__prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slider-item post-slider__item">
+                                <div class="post-slider__image">
+                                    <img src="images/content/main-page-9.jpg" alt="main-page-9">
+                                </div>
+                                <div class="post-slider__info">
+                                    <h3 class="h3 title">Lemon macaroon</h3>
+                                    <div class="wysiwyg">
+                                        <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
+                                    </div>
+                                    <div class="display-flex justify-between align-center flex-wrap">
+                                        <div class="prise">
+                                            $24
+                                            <span class="pieces">
+                                                    for 16 pieces
+                                                </span>
+                                        </div>
+                                        <button type="button" class="btn btn_secondary">order now</button>
+                                    </div>
+                                </div>
+                                <div class="slider-next post-slider__next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
+                                </div>
+                                <div class="slider-prev post-slider__prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slider-item post-slider__item">
+                                <div class="post-slider__image">
+                                    <img src="images/content/main-page-10.jpg" alt="main-page-10">
+                                </div>
+                                <div class="post-slider__info">
+                                    <h3 class="h3 title">Lemon macaroon</h3>
+                                    <div class="wysiwyg">
+                                        <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
+                                    </div>
+                                    <div class="display-flex justify-between align-center flex-wrap">
+                                        <div class="prise">
+                                            $24
+                                            <span class="pieces">
+                                                    for 16 pieces
+                                                </span>
+                                        </div>
+                                        <button type="button" class="btn btn_secondary">order now</button>
+                                    </div>
+                                </div>
+                                <div class="slider-next post-slider__next">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
+                                </div>
+                                <div class="slider-prev post-slider__prev">
+                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination slider-pagination  post-slider__pagination"></div>
                     </div>
                 </div>
-            </div>
-            <div class="col col_3 col_desktop-12"></div>
-        </div>
 
-        <div class="post-slider slider" style="margin-bottom: 50px">
-            <div class="swiper-container post-slider__container">
-                <div class="swiper-wrapper post-slider__wrapper">
-                    <div class="swiper-slide slider-item post-slider__item">
-                        <div class="post-slider__image">
-                            <img src="images/galery/9.png" alt="main-page-7">
-                        </div>
-                        <div class="post-slider__info">
-                            <h3 class="h3 title">Capibaribe River</h3>
-                            <div class="wysiwyg">
-                                <p>After years of scouting and
-                                    fishing different areas off
-                                    the coast of Northern Brazil in search of Tarpon and other
-                                    sport species, we are glad to introduce you to the first fly only operation for Tarpon in South America! </p>
-                            </div>
-                            <div class="display-flex justify-between align-center flex-wrap">
-                                <button type="button" class="btn btn_secondary">Leer más</button>
-                            </div>
-                        </div>
-                        <div class="slider-next post-slider__next">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
-                        </div>
-                        <div class="slider-prev post-slider__prev">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slider-item post-slider__item">
-                        <div class="post-slider__image">
-                            <img src="images/content/main-page-8.jpg" alt="main-page-8">
-                        </div>
-                        <div class="post-slider__info">
-                            <h3 class="h3 title">Lemon macaroon</h3>
-                            <div class="wysiwyg">
-                                <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
-                            </div>
-                            <div class="display-flex justify-between align-center flex-wrap">
-                                <div class="prise">
-                                    $24
-                                    <span class="pieces">
-                                            for 16 pieces
-                                        </span>
-                                </div>
-                                <button type="button" class="btn btn_secondary">order now</button>
-                            </div>
-                        </div>
-                        <div class="slider-next post-slider__next">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
-                        </div>
-                        <div class="slider-prev post-slider__prev">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slider-item post-slider__item">
-                        <div class="post-slider__image">
-                            <img src="images/content/main-page-9.jpg" alt="main-page-9">
-                        </div>
-                        <div class="post-slider__info">
-                            <h3 class="h3 title">Lemon macaroon</h3>
-                            <div class="wysiwyg">
-                                <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
-                            </div>
-                            <div class="display-flex justify-between align-center flex-wrap">
-                                <div class="prise">
-                                    $24
-                                    <span class="pieces">
-                                            for 16 pieces
-                                        </span>
-                                </div>
-                                <button type="button" class="btn btn_secondary">order now</button>
-                            </div>
-                        </div>
-                        <div class="slider-next post-slider__next">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
-                        </div>
-                        <div class="slider-prev post-slider__prev">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slider-item post-slider__item">
-                        <div class="post-slider__image">
-                            <img src="images/content/main-page-10.jpg" alt="main-page-10">
-                        </div>
-                        <div class="post-slider__info">
-                            <h3 class="h3 title">Lemon macaroon</h3>
-                            <div class="wysiwyg">
-                                <p>Placerat vitae ullamcorper in amet convallis dignissim lacus, aenean. Magna mollis sit odio sit aliquet facilisi. </p>
-                            </div>
-                            <div class="display-flex justify-between align-center flex-wrap">
-                                <div class="prise">
-                                    $24
-                                    <span class="pieces">
-                                            for 16 pieces
-                                        </span>
-                                </div>
-                                <button type="button" class="btn btn_secondary">order now</button>
-                            </div>
-                        </div>
-                        <div class="slider-next post-slider__next">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.2828 2.76273C12.4781 2.56747 12.7947 2.56747 12.9899 2.76273L21.9192 11.692C22.1145 11.8873 22.1145 12.2039 21.9192 12.3991L12.9899 21.3284C12.7947 21.5237 12.4781 21.5237 12.2828 21.3284L11.7172 20.7627C11.5219 20.5675 11.5219 20.2509 11.7172 20.0556L17.9737 13.7991C18.2886 13.4841 18.0656 12.9456 17.6201 12.9456H3.5C3.22386 12.9456 3 12.7217 3 12.4456V11.6456C3 11.3694 3.22386 11.1456 3.5 11.1456H17.6201C18.0656 11.1456 18.2886 10.607 17.9737 10.292L11.7172 4.03553C11.5219 3.84026 11.5219 3.52368 11.7172 3.32842L12.2828 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9419 1.85355C11.1372 1.65829 11.4538 1.65829 11.649 1.85355L20.7374 10.9419C20.9327 11.1372 20.9327 11.4538 20.7374 11.649L11.649 20.7374C11.4538 20.9327 11.1372 20.9327 10.9419 20.7374L10.0581 19.8536C9.8628 19.6583 9.86279 19.3417 10.0581 19.1464L15.9305 13.274C16.2454 12.9591 16.0224 12.4205 15.5769 12.4205H2C1.72386 12.4205 1.5 12.1966 1.5 11.9205V10.6705C1.5 10.3944 1.72386 10.1705 2 10.1705H15.5769C16.0224 10.1705 16.2454 9.63192 15.9305 9.31694L10.0581 3.44454C9.86279 3.24928 9.8628 2.9327 10.0581 2.73744L10.9419 1.85355Z"/> </svg>
-                        </div>
-                        <div class="slider-prev post-slider__prev">
-                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M11.7172 2.76273C11.5219 2.56747 11.2053 2.56747 11.0101 2.76273L2.08076 11.692C1.8855 11.8873 1.8855 12.2039 2.08076 12.3991L11.0101 21.3284C11.2053 21.5237 11.5219 21.5237 11.7172 21.3284L12.2828 20.7627C12.4781 20.5675 12.4781 20.2509 12.2828 20.0556L6.02634 13.7991C5.71136 13.4841 5.93445 12.9456 6.3799 12.9456H20.5C20.7761 12.9456 21 12.7217 21 12.4456V11.6456C21 11.3694 20.7761 11.1456 20.5 11.1456H6.3799C5.93445 11.1456 5.71136 10.607 6.02634 10.292L12.2828 4.03553C12.4781 3.84026 12.4781 3.52368 12.2828 3.32842L11.7172 2.76273Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0581 1.85355C12.8628 1.65829 12.5462 1.65829 12.351 1.85355L3.26257 10.9419C3.0673 11.1372 3.0673 11.4538 3.26256 11.649L12.351 20.7374C12.5462 20.9327 12.8628 20.9327 13.0581 20.7374L13.9419 19.8536C14.1372 19.6583 14.1372 19.3417 13.9419 19.1464L8.06954 13.274C7.75456 12.9591 7.97765 12.4205 8.4231 12.4205H22C22.2761 12.4205 22.5 12.1966 22.5 11.9205V10.6705C22.5 10.3944 22.2761 10.1705 22 10.1705H8.4231C7.97765 10.1705 7.75456 9.63192 8.06954 9.31694L13.9419 3.44454C14.1372 3.24928 14.1372 2.9327 13.9419 2.73744L13.0581 1.85355Z"/> </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination slider-pagination  post-slider__pagination"></div>
             </div>
-        </div>
-
-    </div>
-</section>
-<section class="section section_secondary-bg">
+        </section>
+        <section class="section section_secondary-bg">
     <div class="container">
         <div class="row">
             <div class="col col_2 col_desktop-12"></div>

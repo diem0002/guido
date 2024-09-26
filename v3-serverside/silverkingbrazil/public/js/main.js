@@ -322,7 +322,7 @@
         setTimeout(function () {
             location.reload(true);
         }, 10);
-        window.open('https://wa.me/2964548954', '_blank'); // Reemplaza con tu número de WhatsApp
+        window.open('https://wa.me/+5492964548954', '_blank'); // Reemplaza con tu número de WhatsApp
     });
 
 })(jQuery);

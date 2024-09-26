@@ -1783,15 +1783,15 @@ input[type="reset"] {
   padding: calc(228px + 48px) 200px 69px 116px;
   width: auto;
   height: auto;
-  min-width: 600px;
-  min-height: 600px;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+  min-width: 300px;
+  min-height: 150px;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); }
   .header_menu-active .header-nav__container:after {
-    -webkit-transform: translate(26px, 0);
-            transform: translate(26px, 0);
-    width: calc(100% + 31px);
-    height: calc(100% + 31px);
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
     -webkit-animation-name: move-your-body;
             animation-name: move-your-body;
     -webkit-animation-duration: 7s;
@@ -1832,31 +1832,31 @@ input[type="reset"] {
 
 @-webkit-keyframes move-your-body {
   25% {
-    -webkit-transform: translate(-26px, 0);
-            transform: translate(-26px, 0); }
+    -webkit-transform: translate(-20px, 0);
+            transform: translate(-20px, 0); }
   50% {
-    -webkit-transform: translate(0, -26px);
-            transform: translate(0, -26px); }
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px); }
   75% {
-    -webkit-transform: translate(26px, -26px);
-            transform: translate(26px, -26px); }
+    -webkit-transform: translate(20px, -20px);
+            transform: translate(20px, -20px); }
   100% {
-    -webkit-transform: translate(26px, 0);
-            transform: translate(26px, 0); } }
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0); } }
 
 @keyframes move-your-body {
   25% {
-    -webkit-transform: translate(-26px, 0);
-            transform: translate(-26px, 0); }
+    -webkit-transform: translate(-20px, 0);
+            transform: translate(-20px, 0); }
   50% {
-    -webkit-transform: translate(0, -26px);
-            transform: translate(0, -26px); }
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px); }
   75% {
-    -webkit-transform: translate(26px, -26px);
-            transform: translate(26px, -26px); }
+    -webkit-transform: translate(20px, -20px);
+            transform: translate(20px, -20px); }
   100% {
-    -webkit-transform: translate(26px, 0);
-            transform: translate(26px, 0); } }
+    -webkit-transform: translate(20px, 0);
+            transform: translate(20px, 0); } }
 
 .footer {
   margin-top: auto; }
@@ -2501,7 +2501,7 @@ input[type="reset"] {
     width: 200%;
     height: 200%;
     z-index: -1; }
-    
+
   /* css de fotos del home */
     .main-photo-item-1 {
       max-width: 312px;
@@ -2617,7 +2617,7 @@ input[type="reset"] {
       .dignity-image {
         text-align:right; /* Opcional: centra la imagen dentro del div */
     }
-    
+
     .dignity-image img {
         width: 100px; /* Ajusta el tamaño según sea necesario */
         height:auto; /* Mantiene la proporción de la imagen */

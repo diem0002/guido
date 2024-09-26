@@ -319,7 +319,10 @@
     }
     document.querySelector('.popup-init').addEventListener('click', function(event) {
         event.preventDefault(); // Evita el comportamiento predeterminado si es necesario
-        window.open('https://wa.me/3454199555', '_blank'); // Reemplaza con tu número de WhatsApp
+        setTimeout(function () {
+            location.reload(true);
+        }, 10);
+        window.open('https://wa.me/2964548954', '_blank'); // Reemplaza con tu número de WhatsApp
     });
 
 })(jQuery);

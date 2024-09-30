@@ -326,3 +326,19 @@
     });
 
 })(jQuery);
+
+
+document.querySelectorAll('.read-more-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var expandableText = this.closest('.post-slider__info').querySelector('.expandable-text');
+        
+        if (expandableText.classList.contains('expanded')) {
+            expandableText.classList.remove('expanded');
+            this.textContent = "Leer más";
+        } else {
+            expandableText.classList.add('expanded');
+            this.textContent = "Leer menos";
+        }
+    });
+});
+

@@ -30,5 +30,8 @@ RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 # Configuramos Apache para servir desde la carpeta public
 COPY ./apache-default.conf /etc/apache2/sites-available/000-default.conf
 
+
+RUN chmod -R 777 *
+
 # Exponemos el puerto 80
 EXPOSE 80

@@ -40,7 +40,7 @@ body {
 /* color de textos */
 body {
   color: rgb(85, 92, 99);
-  font: 400 14px/130% "Josefin Sans", sans-serif;
+  font: 400 12px/130% "Montserrat", sans-serif;/* Montserrat *//*Josefin Sans */
   -webkit-font-smoothing: antialiased; }
 
 .wrapper {
@@ -1174,13 +1174,14 @@ svg {
   fill: #A88E65; }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 24px ;
+  height: 24px ;
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block; }
   @media screen and (max-width: 767px) {
     .icon {
+
       width: 18px;
       height: 18px; } }
   .icon-text {
@@ -1230,6 +1231,36 @@ svg {
       .label-icon .icon-position-left {
         right: auto;
         left: 8px; } }
+
+.icon-list {
+  display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+  gap: 16px; /* Controla el espacio entre los íconos */
+  list-style: none; /* Elimina los estilos de lista predeterminados (puntos) */
+  padding: 0; /* Elimina el padding predeterminado del ul */
+  margin: 0; /* Elimina el margen predeterminado del ul */
+        }
+
+.contact-item {
+  display: flex; /* Mantiene el ícono y cualquier texto alineado en fila */
+  align-items: center; /* Centra verticalmente */
+
+        }
+
+.icon {
+  margin-right: 8px; /* Ajusta el espacio entre el ícono y cualquier contenido textual */
+  width: 24px;
+  height: 24px;
+        }
+
+    @media screen and (max-width: 767px) {
+      .icon {
+      width: 18px;
+      height: 18px;
+          }
+        }
+
+
+
 
 form input[type="text"],
 form input[type="password"],
@@ -1895,27 +1926,30 @@ input[type="reset"] {
 
 .contact-list {
   list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   margin: 0; }
 
 .contact-item {
-  margin-bottom: 7px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  color: rgba(35, 41, 56, 0.6); }
+    display: flex;
+    margin-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(35, 41, 56, 0.6);
+}
+
+
   .contact-item:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+
+  }
+
   .contact-item .icon {
-    width: 16px;
-    height: 16px; }
-  @media screen and (max-width: 767px) {
-    .contact-item {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+    width: 35px;
+    height: 35px;
+   }
+
 
 .contact-link {
   color: rgba(35, 41, 56, 0.6); }
@@ -2501,7 +2535,7 @@ input[type="reset"] {
     width: 200%;
     height: 200%;
     z-index: -1; }
-    
+
   /* css de fotos del home */
     .main-photo-item-1 {
       max-width: 312px;
@@ -2617,7 +2651,7 @@ input[type="reset"] {
       .dignity-image {
         text-align:right; /* Opcional: centra la imagen dentro del div */
     }
-    
+
     .dignity-image img {
         width: 100px; /* Ajusta el tamaño según sea necesario */
         height:auto; /* Mantiene la proporción de la imagen */
@@ -3025,3 +3059,63 @@ input[type="reset"] {
     display: block; }
 
 /*read-more*/
+
+.expandable-text {
+  max-height: 17px;
+  overflow: hidden;
+  transition: max-height 0.1s ease;
+}
+
+.expandable-text.expanded {
+  max-height: 500px;
+}
+
+/* Estilo para el contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para el contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para el contenido del dropdown */
+.dropdown-content {
+    position: absolute;
+    min-width: 160px;
+    margin-top: 1em;
+    z-index: 1;
+    padding: 10px; /* Espaciado interno */
+}
+.dropdown-content {
+    display: none; /* Ocultar por defecto */
+}
+
+.dropdown-content.show {
+    display: block; /* Mostrar cuando la clase 'show' está activa */
+}
+
+/* Estilo para los enlaces dentro del dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: inline-block; /* Alínea horizontalmente */
+    margin: 0 5px; /* Espacio entre elementos */
+}
+
+
+/* Opcional: estilo para las banderas */
+.icon.flag {
+    width: 24px; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción */
+}
+.pad-right{
+    margin-left: 100px;
+}
+
+
+.dropdown-content.show {
+    display: block; /* Mostrar cuando la clase 'show' está activa */
+}

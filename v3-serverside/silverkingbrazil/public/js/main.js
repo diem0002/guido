@@ -326,3 +326,46 @@
     });
 
 })(jQuery);
+
+
+document.querySelectorAll('.read-more-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var expandableText = this.closest('.post-slider__info').querySelector('.expandable-text');
+
+        if (expandableText.classList.contains('expanded')) {
+            expandableText.classList.remove('expanded');
+            this.textContent = "Leer más";
+        } else {
+            expandableText.classList.add('expanded');
+            this.textContent = "Leer menos";
+        }
+    });
+});
+function toggleDropdown(event) {
+    event.preventDefault(); // Previene el comportamiento por defecto del enlace
+
+    const dropdown = event.currentTarget.parentElement; // Obtiene el contenedor del dropdown
+    const dropdownContent = dropdown.querySelector('.dropdown-content'); // Busca el contenido del dropdown
+
+    // Alterna la clase 'show' para mostrar/ocultar el contenido
+    dropdownContent.classList.toggle('show');
+
+    // Cierra el dropdown si se hace clic fuera de él
+    window.onclick = function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdownContent.classList.remove('show');
+        }
+    }
+}
+
+
+// Cierra el dropdown si el usuario hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.nav__link')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].style.display = "none";
+        }
+    }
+};
+

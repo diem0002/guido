@@ -3079,27 +3079,22 @@ input[type="reset"] {
 /* Estilo para el contenedor del dropdown */
 .dropdown {
     position: relative;
-    display: row;
 }
 
 /* Estilo para el contenido del dropdown */
-.dropdown-content {
+.dropdown-flag-content {
     position: absolute;
     min-width: 160px;
     margin-top: 1em;
     z-index: 1;
     padding: 10px; /* Espaciado interno */
 }
-.dropdown-content {
+.dropdown-flag-content {
     display: none; /* Ocultar por defecto */
 }
 
-.dropdown-content.show {
-    display: block; /* Mostrar cuando la clase 'show' está activa */
-}
-
 /* Estilo para los enlaces dentro del dropdown */
-.dropdown-content a {
+.dropdown-flag-content a {
     text-decoration: none;
     display: inline-block; /* Alínea horizontalmente */
     margin: 0 5px; /* Espacio entre elementos */
@@ -3115,7 +3110,6 @@ input[type="reset"] {
     margin-left: 100px;
 }
 
-
-.dropdown-content.show {
-    display: block; /* Mostrar cuando la clase 'show' está activa */
+.dropdown-flag-content.show {
+    display: block;
 }

@@ -338,25 +338,19 @@
         }
     });
 });
-function toggleDropdown(event) {
-    event.preventDefault(); // Previene el comportamiento por defecto del enlace
 
-    const dropdown = event.currentTarget.parentElement; // Obtiene el contenedor del dropdown
-    const dropdownContent = dropdown.querySelector('.dropdown-content'); // Busca el contenido del dropdown
-
-    // Alterna la clase 'show' para mostrar/ocultar el contenido
-    dropdownContent.classList.toggle('show');
-
-    // Cierra el dropdown si se hace clic fuera de él
+    let flagButton = $('#flagButton');
+    flagButton.on("click", function() {
+        console.log('click on flag button');
+        const dropdownContent = $('.dropdown-flag-content');
+        dropdownContent.classList.toggle('show');
+    })
     window.onclick = function(event) {
-        if (!dropdown.contains(event.target)) {
+        const dropdownContent = $('.dropdown-flag-content');
+        if (!dropdownContent.classList.contains('show')) {
             dropdownContent.classList.remove('show');
         }
     }
-}
-
-
-
 
 })(jQuery);
 

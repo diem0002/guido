@@ -43,10 +43,10 @@
                                     <li class="nav__item"><a href="#footer" class="nav__link">@lang('home-page.contacto_menu_item')</a></li>
                                     <li class="pad-right">
                                         <div class="dropdown">
-                                            <a class="nav__link" onclick="toggleDropdown(event)">
+                                            <a class="nav__link" id="flagButton">
                                                 <img src="images/flags/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="Flag" class="icon flag">
                                             </a>
-                                            <div class="dropdown-content">
+                                            <div class="dropdown-flag-content">
                                                 <a href="{{ LaravelLocalization::getLocalizedURL('en') }}" class="inline-flag">
                                                     <img src="images/flags/en.png" alt="" class="icon flag">
                                                 </a>
@@ -559,7 +559,7 @@
                                 </svg>
                             </div>
                         </div>
-                        
+
                             <div class="row align-center-desktop">
                                 <div class="col col_8 col_middle-desktop-12 text-desktop-center">
                                     <div class="subscription-description wysiwyg">

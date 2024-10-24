@@ -46,7 +46,7 @@
                                             <a class="nav__link" id="flagButton">
                                                 <img src="images/flags/{{ LaravelLocalization::getCurrentLocale() }}.png" alt="Flag" class="icon flag">
                                             </a>
-                                            <div class="dropdown-flag-content">
+                                            <div class="dropdown-flag-content" id="dropdown-flag-content-id">
                                                 <a href="{{ LaravelLocalization::getLocalizedURL('en') }}" class="inline-flag">
                                                     <img src="images/flags/en.png" alt="" class="icon flag">
                                                 </a>

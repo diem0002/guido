@@ -317,6 +317,7 @@
             return false;
         })
     }
+
     document.querySelector('.popup-init').addEventListener('click', function(event) {
         event.preventDefault(); // Evita el comportamiento predeterminado si es necesario
         setTimeout(function () {
@@ -328,18 +329,21 @@
     document.querySelectorAll('.read-more-btn').forEach(function(button) {
     button.addEventListener('click', function() {
         var expandableText = this.closest('.post-slider__info').querySelector('.expandable-text');
-
         if (expandableText.classList.contains('expanded')) {
             expandableText.classList.remove('expanded');
-            this.textContent = "Leer más";
+            $('#read-more').hide();
+            $('#read-less').show();
         } else {
+            $('#read-more').show();
+            $('#read-less').hide();
             expandableText.classList.add('expanded');
-            this.textContent = "Leer menos";
         }
     });
 });
 
     $(document).ready(function() {
+        $('#read-more').show();
+        $('#read-less').hide();
         // Inicialmente ocultar el contenido del dropdown
         $('#dropdown-flag-content-id').hide();
 

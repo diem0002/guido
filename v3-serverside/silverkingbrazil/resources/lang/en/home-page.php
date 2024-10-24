@@ -69,7 +69,7 @@ return [
     'p-photo-4'=>'The beginning of a fishing day in the mangroves of Pernambuco, where the Silver King Brazil team explores the waters. With the first ray of sunlight, the adventure begins in one of the most exciting destinations for sport fishing in northeastern Brazil.',
     'button-read-more-4'=>'Read More',
 
-    'h3-brochure-mail'=> 'Leave us your email and receive the 2024 brochure',
+    'h3-brochure-mail'=> "Leave us your email and receive the 2024 brochure",
 
     'your-email-1'=>'"Your email address"',
 

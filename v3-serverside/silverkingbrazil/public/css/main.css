@@ -3079,7 +3079,7 @@ input[type="reset"] {
 /* Estilo para el contenedor del dropdown */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: row;
 }
 
 /* Estilo para el contenido del dropdown */

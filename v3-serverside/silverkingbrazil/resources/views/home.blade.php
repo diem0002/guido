@@ -19,7 +19,7 @@
         <div class="container">
             <!-- logo -->
             <div class="site-logo">
-                <a href="index.html" class="site-logo__link">
+                <a href="" class="site-logo__link">
                     <picture>
                         <source media="(max-width: 767px)" srcset="images/logo-mob.png">
                         <source srcset="images/logo.png">

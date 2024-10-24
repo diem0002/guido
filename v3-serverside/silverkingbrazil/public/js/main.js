@@ -325,10 +325,7 @@
         window.open('https://wa.me/2964548954', '_blank'); // Reemplaza con tu número de WhatsApp
     });
 
-})(jQuery);
-
-
-document.querySelectorAll('.read-more-btn').forEach(function(button) {
+    document.querySelectorAll('.read-more-btn').forEach(function(button) {
     button.addEventListener('click', function() {
         var expandableText = this.closest('.post-slider__info').querySelector('.expandable-text');
 
@@ -359,13 +356,8 @@ function toggleDropdown(event) {
 }
 
 
-// Cierra el dropdown si el usuario hace clic fuera de él
-window.onclick = function(event) {
-    if (!event.target.matches('.nav__link')) {
-        const dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].style.display = "none";
-        }
-    }
-};
+
+
+})(jQuery);
+
 
